@@ -260,7 +260,7 @@ test_data = numerical_to_binary('test_final.csv', attribute_indices, False)
 attributes = set(range(14))
 
 
-size = 6
+size = 8
 new_trees = random_forest(train_data, attributes, attribute_names, T=500, feature_subset_size = size)
 train_predictions = predict_bagging(new_trees, train_data, attribute_indices)
 test_predictions= predict_bagging(new_trees, test_data, attribute_indices)
